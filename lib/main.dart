@@ -11,6 +11,7 @@ class Example1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.grey,
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Row(
@@ -33,18 +34,32 @@ class Example1 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'A',
+                  'Hier',
                   style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                  ),
+                      fontSize: 24,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w600,
+                      shadows: [
+                        Shadow(
+                          color: Colors.red,
+                          offset: Offset(2, 2),
+                          blurRadius: 8,
+                        )
+                      ]),
                 ),
                 Text(
-                  'B',
+                  ' könnte',
                   style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                  ),
+                      fontSize: 24,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w600,
+                      shadows: [
+                        Shadow(
+                          color: Colors.red,
+                          offset: Offset(2, 2),
+                          blurRadius: 8,
+                        )
+                      ]),
                 ),
               ],
             ),
@@ -53,27 +68,48 @@ class Example1 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'C',
+                  'ihre',
                   style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                  ),
+                      fontSize: 24,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w600,
+                      shadows: [
+                        Shadow(
+                          color: Colors.red,
+                          offset: Offset(2, 2),
+                          blurRadius: 8,
+                        )
+                      ]),
                 ),
                 Text(
-                  'D',
+                  ' Werbung',
                   style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                  ),
+                      fontSize: 24,
+                      fontStyle: FontStyle.italic,
+                      fontWeight: FontWeight.w600,
+                      shadows: [
+                        Shadow(
+                          color: Colors.red,
+                          offset: Offset(2, 2),
+                          blurRadius: 8,
+                        )
+                      ]),
                 ),
               ],
             ),
             Text(
-              'E',
+              'stehen!',
               style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
-              ),
+                  fontSize: 24,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w600,
+                  shadows: [
+                    Shadow(
+                      color: Colors.red,
+                      offset: Offset(2, 2),
+                      blurRadius: 8,
+                    )
+                  ]),
             )
           ],
         ),
